@@ -1,8 +1,107 @@
-07:29:12,984DEBUG TestBase:47 - config file loaded !!!
- 07:29:12,988DEBUG TestBase:64 - OR file loaded !!!
- 07:29:17,066DEBUG TestBase:78 - Chrome Launched !!!
- 07:29:22,006DEBUG TestBase:86 - Navigated to: https://testing.adaptix.in
- 07:29:22,098DEBUG LoginTest:13 - Inside Login Test
- 07:29:25,197DEBUG LoginTest:17 - Login successfuly executed
- 07:29:25,607DEBUG TestBase:98 - Test executed completed !!!
- ted completed !!!
+14:16:39,959DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Couldn't find template in cache for "spark/spark.spa.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 14:16:39,966DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/spark.spa_en_GB.ftl"): Not found
+ 14:16:39,970DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/spark.spa_en.ftl"): Not found
+ 14:16:39,973DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/spark.spa.ftl"): Found
+ 14:16:39,974DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Loading template for "spark/spark.spa.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/LENOVO/.m2/repository/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar!/com/aventstack/extentreports/templates/spark/spark.spa.ftl"
+ 14:16:40,116DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Couldn't find template in cache for "commons/commons-variables.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 14:16:40,116DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("commons/commons-variables_en_GB.ftl"): Not found
+ 14:16:40,117DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("commons/commons-variables_en.ftl"): Not found
+ 14:16:40,118DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("commons/commons-variables.ftl"): Found
+ 14:16:40,118DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Loading template for "commons/commons-variables.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/LENOVO/.m2/repository/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar!/com/aventstack/extentreports/templates/commons/commons-variables.ftl"
+ 14:16:40,317DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Couldn't find template in cache for "commons/commons-macros.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 14:16:40,318DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("commons/commons-macros_en_GB.ftl"): Not found
+ 14:16:40,320DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("commons/commons-macros_en.ftl"): Not found
+ 14:16:40,321DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("commons/commons-macros.ftl"): Found
+ 14:16:40,321DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Loading template for "commons/commons-macros.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/LENOVO/.m2/repository/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar!/com/aventstack/extentreports/templates/commons/commons-macros.ftl"
+ 14:16:40,339DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Couldn't find template in cache for "spark/macros/attributes.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 14:16:40,340DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/macros/attributes_en_GB.ftl"): Not found
+ 14:16:40,341DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/macros/attributes_en.ftl"): Not found
+ 14:16:40,342DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/macros/attributes.ftl"): Found
+ 14:16:40,342DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Loading template for "spark/macros/attributes.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/LENOVO/.m2/repository/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar!/com/aventstack/extentreports/templates/spark/macros/attributes.ftl"
+ 14:16:40,345DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Couldn't find template in cache for "spark/macros/log.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 14:16:40,347DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/macros/log_en_GB.ftl"): Not found
+ 14:16:40,347DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/macros/log_en.ftl"): Not found
+ 14:16:40,348DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/macros/log.ftl"): Found
+ 14:16:40,349DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Loading template for "spark/macros/log.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/LENOVO/.m2/repository/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar!/com/aventstack/extentreports/templates/spark/macros/log.ftl"
+ 14:16:40,353DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Couldn't find template in cache for "spark/macros/recurse_nodes.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 14:16:40,354DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en_GB.ftl"): Not found
+ 14:16:40,355DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en.ftl"): Not found
+ 14:16:40,357DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes.ftl"): Found
+ 14:16:40,357DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Loading template for "spark/macros/recurse_nodes.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/LENOVO/.m2/repository/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar!/com/aventstack/extentreports/templates/spark/macros/recurse_nodes.ftl"
+ 14:16:40,364DEBUG _Log4jLoggerFactory$Log4jLogger:45 - "spark/macros/log.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+ 14:16:40,364DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Couldn't find template in cache for "spark/macros/attr-common.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 14:16:40,365DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/macros/attr-common_en_GB.ftl"): Not found
+ 14:16:40,366DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/macros/attr-common_en.ftl"): Not found
+ 14:16:40,367DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/macros/attr-common.ftl"): Found
+ 14:16:40,368DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Loading template for "spark/macros/attr-common.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/LENOVO/.m2/repository/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar!/com/aventstack/extentreports/templates/spark/macros/attr-common.ftl"
+ 14:16:40,388DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Couldn't find template in cache for "spark/partials/head.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 14:16:40,389DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/head_en_GB.ftl"): Not found
+ 14:16:40,391DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/head_en.ftl"): Not found
+ 14:16:40,391DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/head.ftl"): Found
+ 14:16:40,393DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Loading template for "spark/partials/head.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/LENOVO/.m2/repository/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar!/com/aventstack/extentreports/templates/spark/partials/head.ftl"
+ 14:16:40,401DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Couldn't find template in cache for "commons/commons-inject-css.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 14:16:40,403DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("commons/commons-inject-css_en_GB.ftl"): Not found
+ 14:16:40,404DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("commons/commons-inject-css_en.ftl"): Not found
+ 14:16:40,405DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("commons/commons-inject-css.ftl"): Found
+ 14:16:40,405DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Loading template for "commons/commons-inject-css.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/LENOVO/.m2/repository/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar!/com/aventstack/extentreports/templates/commons/commons-inject-css.ftl"
+ 14:16:40,408DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Couldn't find template in cache for "spark/partials/navbar.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 14:16:40,409DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/navbar_en_GB.ftl"): Not found
+ 14:16:40,410DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/navbar_en.ftl"): Not found
+ 14:16:40,411DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/navbar.ftl"): Found
+ 14:16:40,411DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Loading template for "spark/partials/navbar.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/LENOVO/.m2/repository/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar!/com/aventstack/extentreports/templates/spark/partials/navbar.ftl"
+ 14:16:40,422DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Couldn't find template in cache for "spark/partials/sidenav.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 14:16:40,423DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/sidenav_en_GB.ftl"): Not found
+ 14:16:40,424DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/sidenav_en.ftl"): Not found
+ 14:16:40,425DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/sidenav.ftl"): Found
+ 14:16:40,426DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Loading template for "spark/partials/sidenav.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/LENOVO/.m2/repository/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar!/com/aventstack/extentreports/templates/spark/partials/sidenav.ftl"
+ 14:16:40,447DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Couldn't find template in cache for "spark/partials/test.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 14:16:40,448DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/test_en_GB.ftl"): Not found
+ 14:16:40,449DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/test_en.ftl"): Not found
+ 14:16:40,450DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/test.ftl"): Found
+ 14:16:40,451DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Loading template for "spark/partials/test.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/LENOVO/.m2/repository/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar!/com/aventstack/extentreports/templates/spark/partials/test.ftl"
+ 14:16:40,476DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Couldn't find template in cache for "spark/partials/standard-content.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 14:16:40,478DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/standard-content_en_GB.ftl"): Not found
+ 14:16:40,480DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/standard-content_en.ftl"): Not found
+ 14:16:40,480DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/standard-content.ftl"): Found
+ 14:16:40,481DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Loading template for "spark/partials/standard-content.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/LENOVO/.m2/repository/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar!/com/aventstack/extentreports/templates/spark/partials/standard-content.ftl"
+ 14:16:40,498DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Couldn't find template in cache for "spark/partials/exception.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 14:16:40,500DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/exception_en_GB.ftl"): Not found
+ 14:16:40,500DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/exception_en.ftl"): Not found
+ 14:16:40,501DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/exception.ftl"): Found
+ 14:16:40,502DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Loading template for "spark/partials/exception.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/LENOVO/.m2/repository/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar!/com/aventstack/extentreports/templates/spark/partials/exception.ftl"
+ 14:16:40,504DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Couldn't find template in cache for "spark/partials/category.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 14:16:40,505DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/category_en_GB.ftl"): Not found
+ 14:16:40,507DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/category_en.ftl"): Not found
+ 14:16:40,508DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/category.ftl"): Found
+ 14:16:40,509DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Loading template for "spark/partials/category.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/LENOVO/.m2/repository/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar!/com/aventstack/extentreports/templates/spark/partials/category.ftl"
+ 14:16:40,511DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Couldn't find template in cache for "spark/partials/device.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 14:16:40,512DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/device_en_GB.ftl"): Not found
+ 14:16:40,520DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/device_en.ftl"): Not found
+ 14:16:40,522DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/device.ftl"): Found
+ 14:16:40,523DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Loading template for "spark/partials/device.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/LENOVO/.m2/repository/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar!/com/aventstack/extentreports/templates/spark/partials/device.ftl"
+ 14:16:40,525DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Couldn't find template in cache for "spark/partials/author.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 14:16:40,527DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/author_en_GB.ftl"): Not found
+ 14:16:40,529DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/author_en.ftl"): Not found
+ 14:16:40,529DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/author.ftl"): Found
+ 14:16:40,530DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Loading template for "spark/partials/author.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/LENOVO/.m2/repository/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar!/com/aventstack/extentreports/templates/spark/partials/author.ftl"
+ 14:16:40,532DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Couldn't find template in cache for "spark/partials/log.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 14:16:40,534DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/log_en_GB.ftl"): Not found
+ 14:16:40,535DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/log_en.ftl"): Not found
+ 14:16:40,536DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/log.ftl"): Found
+ 14:16:40,537DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Loading template for "spark/partials/log.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/LENOVO/.m2/repository/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar!/com/aventstack/extentreports/templates/spark/partials/log.ftl"
+ 14:16:40,539DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Couldn't find template in cache for "spark/partials/dashboard.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 14:16:40,540DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/dashboard_en_GB.ftl"): Not found
+ 14:16:40,542DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/dashboard_en.ftl"): Not found
+ 14:16:40,543DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/dashboard.ftl"): Found
+ 14:16:40,544DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Loading template for "spark/partials/dashboard.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/LENOVO/.m2/repository/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar!/com/aventstack/extentreports/templates/spark/partials/dashboard.ftl"
+ 14:16:40,642DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Couldn't find template in cache for "spark/partials/scripts.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 14:16:40,643DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/scripts_en_GB.ftl"): Not found
+ 14:16:40,645DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/scripts_en.ftl"): Not found
+ 14:16:40,646DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("spark/partials/scripts.ftl"): Found
+ 14:16:40,647DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Loading template for "spark/partials/scripts.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/LENOVO/.m2/repository/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar!/com/aventstack/extentreports/templates/spark/partials/scripts.ftl"
+ 14:16:40,649DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Couldn't find template in cache for "commons/commons-inject-js.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 14:16:40,651DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("commons/commons-inject-js_en_GB.ftl"): Not found
+ 14:16:40,652DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("commons/commons-inject-js_en.ftl"): Not found
+ 14:16:40,653DEBUG _Log4jLoggerFactory$Log4jLogger:45 - TemplateLoader.findTemplateSource("commons/commons-inject-js.ftl"): Found
+ 14:16:40,654DEBUG _Log4jLoggerFactory$Log4jLogger:45 - Loading template for "commons/commons-inject-js.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/LENOVO/.m2/repository/com/aventstack/extentreports/5.1.1/extentreports-5.1.1.jar!/com/aventstack/extentreports/templates/commons/commons-inject-js.ftl"
+ 

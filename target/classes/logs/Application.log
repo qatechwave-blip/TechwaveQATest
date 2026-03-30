@@ -1,8 +1,0 @@
-07:29:12,984DEBUG TestBase:47 - config file loaded !!!
- 07:29:12,988DEBUG TestBase:64 - OR file loaded !!!
- 07:29:17,066DEBUG TestBase:78 - Chrome Launched !!!
- 07:29:22,006DEBUG TestBase:86 - Navigated to: https://testing.adaptix.in
- 07:29:22,098DEBUG LoginTest:13 - Inside Login Test
- 07:29:25,197DEBUG LoginTest:17 - Login successfuly executed
- 07:29:25,607DEBUG TestBase:98 - Test executed completed !!!
- ted completed !!!

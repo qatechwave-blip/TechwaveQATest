@@ -5,33 +5,43 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
-import com.Adaptix.base.TestBase;
+import com.Adaptix.base.BaseTest;
 
-public class TestUtil extends TestBase {
+import org.apache.commons.io.FileUtils;
+
+
+
+public class TestUtil extends BaseTest {
 
     public static String screenshotName;
 
     public static void captureScreenshot() throws IOException {
 
         // Create timestamp
-        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+        String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
 
-        // Screenshot file name
-        screenshotName = System.getProperty("user.dir") + "/test-output/screenshots/" + timeStamp + ".png";
+        // Screenshot folder path
+        String folderPath = System.getProperty("user.dir") + "/reports/screenshots/";
+
+        // Create folder if not exists
+        File folder = new File(folderPath);
+        if (!folder.exists()) {
+            folder.mkdirs();
+        }
+
+        // Screenshot file path
+        screenshotName = folderPath + "Screenshot_" + timestamp + ".png";
 
         // Take screenshot
         File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
-        // Create directory if not exists
-        File destFile = new File(screenshotName);
-        destFile.getParentFile().mkdirs();
-
         // Save file
-        FileUtils.copyFile(src, destFile);
+        FileUtils.copyFile(src, new File(screenshotName));
 
+        // Log (optional)
+        System.out.println(" Screenshot saved at: " + screenshotName);
     }
 }

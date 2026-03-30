@@ -1,21 +1,23 @@
 package com.Adaptix.testcases;
 
-import org.openqa.selenium.By;
+import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.Adaptix.base.TestBase;
+import com.Adaptix.Function.loginpage;
+import com.Adaptix.base.BaseTest;
+import com.Adaptix.listeners.ExtentListeners;
 
-public class LoginTest extends TestBase {
-	@Test
-	public void loginASPsg() throws InterruptedException 
-	{
-		 
-		log.debug("Inside Login Test");
-		driver.findElement(By.xpath(OR.getProperty("logBtn"))).click();
-		Thread.sleep(3000);
-		
-		log.debug("Login successfuly executed");
-		
-	}
+@Listeners(ExtentListeners.class)
+public class LoginTest extends BaseTest {
 
+    @Test
+    public void loginPage() {
+
+        loginpage login = new loginpage(driver);
+
+        login.login("SHIVAM.GUPTA", "SHIVAM.GUPTA");
+
+        Assert.assertTrue(login.isDashboardVisible(), "Login Failed");
+    }
 }
