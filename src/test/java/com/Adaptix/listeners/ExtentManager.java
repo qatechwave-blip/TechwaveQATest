@@ -5,9 +5,7 @@ import java.io.IOException;
 import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 
 import com.Adaptix.base.BaseTest;
 import com.aventstack.extentreports.*;
@@ -18,25 +16,47 @@ public class ExtentManager {
     private static ExtentReports extent;
     public static String fileName;
 
-    public static ExtentReports createInstance(String fileName) {
+    
+    public static ExtentReports getExtent() {
 
-        ExtentSparkReporter reporter = new ExtentSparkReporter(fileName);
-        reporter.config().setReportName("Automation Report");
+        if (extent == null) {
 
-        extent = new ExtentReports();
-        extent.attachReporter(reporter);
+            String reportDir = System.getProperty("user.dir") + "/reports/";
+            new File(reportDir).mkdirs(); // folder create
+
+            String reportPath = reportDir + "ExtentReport.html";
+
+            ExtentSparkReporter reporter = new ExtentSparkReporter(reportPath);
+            reporter.config().setReportName("Automation Report");
+
+            extent = new ExtentReports();
+            extent.attachReporter(reporter);
+            
+            
+
+            // ✅ System Info yahi add hoga
+            extent.setSystemInfo("Project", "Adaptix");
+            extent.setSystemInfo("Tester", "Shivam");
+            extent.setSystemInfo("Environment", "QA");
+        }
 
         return extent;
     }
 
-    public static void captureScreenshot() throws IOException {
+    public static String captureScreenshot() throws IOException {
 
         Date d = new Date();
         fileName = d.toString().replace(":", "_").replace(" ", "_") + ".png";
 
-        WebDriver driver = BaseTest.getDriver();   // ✅ FIX
+        WebDriver driver = BaseTest.getDriver();
 
         File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(src, new File("./reports/" + fileName));
+
+        // ✅ SAME FOLDER as report
+        String path = System.getProperty("user.dir") + "/reports/" + fileName;
+
+        FileUtils.copyFile(src, new File(path));
+
+        return path;
     }
 }

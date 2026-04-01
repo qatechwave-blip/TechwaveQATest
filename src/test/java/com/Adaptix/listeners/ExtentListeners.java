@@ -1,112 +1,87 @@
 package com.Adaptix.listeners;
 
 import java.io.IOException;
-import java.util.Date;
 
-import org.testng.ISuite;
-import org.testng.ISuiteListener;
-import org.testng.ITestContext;
-import org.testng.ITestListener;
-import org.testng.ITestResult;
+import org.testng.*;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.MediaEntityBuilder;
-import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.markuputils.ExtentColor;
-import com.aventstack.extentreports.markuputils.Markup;
-import com.aventstack.extentreports.markuputils.MarkupHelper;
+import com.aventstack.extentreports.*;
+import com.aventstack.extentreports.markuputils.*;
 
+public class ExtentListeners implements ITestListener {
 
+    private static ExtentReports extent = ExtentManager.getExtent();
+    public static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
 
-public class ExtentListeners implements ITestListener, ISuiteListener {
+    @Override
+    public void onTestStart(ITestResult result) {
 
-	static Date d = new Date();
-	static String fileName = "Extent_" + d.toString().replace(":", "_").replace(" ", "_") + ".html";
+        ExtentTest extentTest = extent.createTest(
+                result.getTestClass().getName() + " :: " + result.getMethod().getMethodName()
+        );
 
-	private static ExtentReports extent = ExtentManager
-			.createInstance(".\\reports\\" + fileName);
+        test.set(extentTest);
+    }
 
-	public static ExtentTest test;
-	
-	
-	
-	
-	
-	
+    @Override
+    public void onTestSuccess(ITestResult result) {
 
-	public void onTestStart(ITestResult result) {
+        test.get().pass("Test Passed");
 
-		test = extent
-				.createTest(result.getTestClass().getName() + "     @TestCase : " + result.getMethod().getMethodName());
+        // ✅ Screenshot on PASS
+        try {
+            String path = ExtentManager.captureScreenshot();
+            test.get().addScreenCaptureFromPath(path);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
-	}
+        Markup m = MarkupHelper.createLabel(
+                "TEST CASE PASSED",
+                ExtentColor.GREEN
+        );
 
-	public void onTestSuccess(ITestResult result) {
+        test.get().pass(m);
+    }
 
-		String methodName = result.getMethod().getMethodName();
-		String logText = "<b>" + "TEST CASE:- " + methodName.toUpperCase() + " PASSED" + "</b>";
-		Markup m = MarkupHelper.createLabel(logText, ExtentColor.GREEN);
-		test.pass(m);
+    @Override
+    public void onTestFailure(ITestResult result) {
 
-	}
+        test.get().fail(result.getThrowable());
 
-	public void onTestFailure(ITestResult result) {
-		
+        try {
+            String path = ExtentManager.captureScreenshot();
 
-		///test.fail(result.getThrowable().getMessage());
-		try {
-			ExtentManager.captureScreenshot();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		String methodName=result.getMethod().getMethodName();
-		String logText="<b>"+"TEST CASE:- "+ methodName.toUpperCase()+ " FAILED"+"</b>";		
-	
-	
+            test.get().fail("Screenshot",
+                    MediaEntityBuilder.createScreenCaptureFromPath(path).build());
 
-		test.fail("<b><font color=red>" + "Screenshot of failure" + "</font></b><br>",MediaEntityBuilder.createScreenCaptureFromPath(ExtentManager.fileName)
-				.build());
-	
-		
-		Markup m = MarkupHelper.createLabel(logText, ExtentColor.RED);
-		test.log(Status.FAIL, m);
-		
-		
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
-	}
+        Markup m = MarkupHelper.createLabel(
+                "TEST CASE FAILED",
+                ExtentColor.RED
+        );
 
-	public void onTestSkipped(ITestResult result) {
-		String methodName = result.getMethod().getMethodName();
-		String logText = "<b>" + "Test Case:- " + methodName + " Skipped" + "</b>";
-		Markup m = MarkupHelper.createLabel(logText, ExtentColor.YELLOW);
-		test.skip(m);
+        test.get().log(Status.FAIL, m);
+    }
 
-	}
+    @Override
+    public void onTestSkipped(ITestResult result) {
 
-	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-		// TODO Auto-generated method stub
+        Markup m = MarkupHelper.createLabel(
+                "TEST CASE SKIPPED",
+                ExtentColor.YELLOW
+        );
 
-	}
+        test.get().skip(m);
+    }
 
-	public void onStart(ITestContext context) {
+    @Override
+    public void onFinish(ITestContext context) {
 
-	}
-
-	public void onFinish(ITestContext context) {
-
-		if (extent != null) {
-
-			extent.flush();
-		}
-
-	}
-	
-
-	public void onFinish(ISuite suite) {
-		// TODO Auto-generated method stub
-		
-	}
-
+        if (extent != null) {
+            extent.flush();   // ✅ report generate
+        }
+    }
 }

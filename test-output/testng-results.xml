@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-01T14:30:32 IST" name="Default suite" finished-at="2026-04-01T14:30:42 IST" duration-ms="10023">
+  <suite started-at="2026-04-01T16:11:26 IST" name="Suite" finished-at="2026-04-01T16:11:39 IST" duration-ms="13278">
     <groups>
     </groups>
-    <test started-at="2026-04-01T14:30:32 IST" name="Default test" finished-at="2026-04-01T14:30:42 IST" duration-ms="10023">
+    <test started-at="2026-04-01T16:11:26 IST" name="Test" finished-at="2026-04-01T16:11:39 IST" duration-ms="13278">
       <class name="com.Adaptix.testcases.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Adaptix.testcases.LoginTest@51dcb805]" started-at="2026-04-01T14:30:32 IST" name="setUp" finished-at="2026-04-01T14:30:38 IST" duration-ms="5990" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Adaptix.testcases.LoginTest@6c2ed0cd]" started-at="2026-04-01T16:11:26 IST" name="setUp" finished-at="2026-04-01T16:11:35 IST" duration-ms="9139" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginPage()[pri:1, instance:com.Adaptix.testcases.LoginTest@51dcb805]" started-at="2026-04-01T14:30:38 IST" name="loginPage" finished-at="2026-04-01T14:30:40 IST" duration-ms="1817" status="PASS">
+        <test-method signature="loginPage()[pri:1, instance:com.Adaptix.testcases.LoginTest@6c2ed0cd]" started-at="2026-04-01T16:11:35 IST" name="loginPage" finished-at="2026-04-01T16:11:36 IST" duration-ms="1657" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPage -->
-        <test-method signature="moduleTest()[pri:2, instance:com.Adaptix.testcases.LoginTest@51dcb805]" started-at="2026-04-01T14:30:40 IST" name="moduleTest" finished-at="2026-04-01T14:30:42 IST" depends-on-methods="com.Adaptix.testcases.LoginTest.loginPage" duration-ms="2111" status="PASS">
+        <test-method signature="moduleTest()[pri:2, instance:com.Adaptix.testcases.LoginTest@6c2ed0cd]" started-at="2026-04-01T16:11:36 IST" name="moduleTest" finished-at="2026-04-01T16:11:39 IST" depends-on-methods="com.Adaptix.testcases.LoginTest.loginPage" duration-ms="2377" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- moduleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Adaptix.testcases.LoginTest@51dcb805]" started-at="2026-04-01T14:30:42 IST" name="tearDown" finished-at="2026-04-01T14:30:42 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Adaptix.testcases.LoginTest@6c2ed0cd]" started-at="2026-04-01T16:11:39 IST" name="tearDown" finished-at="2026-04-01T16:11:39 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.Adaptix.testcases.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
