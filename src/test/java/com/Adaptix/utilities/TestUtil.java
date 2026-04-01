@@ -7,6 +7,7 @@ import java.util.Date;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 
 import com.Adaptix.base.BaseTest;
 
@@ -15,7 +16,7 @@ import org.apache.commons.io.FileUtils;
 
 
 public class TestUtil extends BaseTest {
-
+  
     public static String screenshotName;
 
     public static void captureScreenshot() throws IOException {

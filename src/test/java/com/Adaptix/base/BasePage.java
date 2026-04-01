@@ -5,7 +5,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class BasePage {
 
-    public static  WebDriver driver;
+    protected WebDriver driver;   //  static hata diya
 
     public BasePage(WebDriver driver) {
         this.driver = driver;

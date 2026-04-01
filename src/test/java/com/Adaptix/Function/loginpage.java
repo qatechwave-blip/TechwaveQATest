@@ -26,9 +26,6 @@ public class loginpage extends BasePage {
     @FindBy(xpath = "(//button[normalize-space()='Sign in'])[1]")
     WebElement btn_login;
 
-    @FindBy(xpath = "//div[contains(@class,'dashboard')]")
-    WebElement dashboard;
-
     public void login(String user, String pass) {
 
         Waits.waitForVisibleElement(driver, txt_userid, 10);
@@ -38,14 +35,5 @@ public class loginpage extends BasePage {
 
         Waits.waitForClickable(driver, btn_login, 10);
         btn_login.click();
-    }
-
-    public boolean isDashboardVisible() {
-        try {
-            Waits.waitForVisibleElement(driver, dashboard, 10);
-            return dashboard.isDisplayed();
-        } catch (Exception e) {
-            return false;
-        }
     }
 }

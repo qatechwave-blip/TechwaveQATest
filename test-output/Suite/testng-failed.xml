@@ -10,7 +10,7 @@
       <class name="com.Adaptix.testcases.LoginTest">
         <methods>
           <include name="tearDown"/>
-          <include name="loginPage"/>
+          <include name="moduleTest"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.Adaptix.testcases.LoginTest -->
