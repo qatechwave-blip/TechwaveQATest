@@ -9,11 +9,15 @@ public class EmailUtil {
 
     public static void sendEmail() {
 
-        Properties prop = new Properties();
-        prop.put("mail.smtp.host", TestConfig.server);
-        prop.put("mail.smtp.port", "587");
-        prop.put("mail.smtp.auth", "true");
-        prop.put("mail.smtp.starttls.enable", "true");
+    	Properties prop = new Properties();
+    	prop.put("mail.smtp.host", TestConfig.server);
+    	prop.put("mail.smtp.port", "587");
+    	prop.put("mail.smtp.auth", "true");
+    	prop.put("mail.smtp.starttls.enable", "true");
+
+    	// 🔥 ADD THESE LINES
+    	prop.put("mail.smtp.ssl.protocols", "TLSv1.2");
+    	prop.put("mail.smtp.starttls.required", "true");
 
         Session session = Session.getInstance(prop, new Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {

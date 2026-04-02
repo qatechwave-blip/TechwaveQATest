@@ -21,6 +21,7 @@ public class ExtentManager {
 
         if (extent == null) {
 
+        	
             String reportDir = System.getProperty("user.dir") + "/reports/";
             new File(reportDir).mkdirs(); // folder create
 

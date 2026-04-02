@@ -3,6 +3,23 @@ package com.Adaptix.utilities;
 public class TestConfig {
 
 	public static String server="smtp.gmail.com";
+	public static String from = "qatechwave@gmail.com";
+	public static String password = "puxv qmvn zwzc gafd";
+	public static String[] to ={"techwaveimplementation@gmail.com"};
+	    
+
+	    public static String subject = "Automation Test Report";
+	    public static String messageBody = "Hi Team,\n\nPlease find attached Extent Report.\n\nThanks";
+
+	    public static String attachmentPath =
+	            System.getProperty("user.dir") + "/reports/ExtentReport.html";
+	}
+	
+	
+	
+	
+
+	/*public static String server="smtp.gmail.com";
 	public static String from = "qatechwave@gmail.com ";
 	public static String password = "Techqa@123";
 	public static String[] to ={"techwaveimplementation@gmail.com"};
@@ -12,7 +29,7 @@ public class TestConfig {
 	public static String attachmentPath="C:\\Users\\way2automation\\Desktop\\Desktop\\devopsimg.jpg";
 	public static String attachmentName="error.jpg";
 	
-	/*
+
 	
 	//SQL DATABASE DETAILS	
 	public static String driver="net.sourceforge.jtds.jdbc.Driver"; 
@@ -30,5 +47,4 @@ public class TestConfig {
 	
 	*/
 	
-	
-}
+

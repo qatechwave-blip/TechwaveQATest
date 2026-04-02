@@ -4,84 +4,78 @@ import java.io.IOException;
 
 import org.testng.*;
 
+import com.Adaptix.utilities.EmailUtil;
 import com.aventstack.extentreports.*;
 import com.aventstack.extentreports.markuputils.*;
 
 public class ExtentListeners implements ITestListener {
 
-    private static ExtentReports extent = ExtentManager.getExtent();
-    public static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
+	private static ExtentReports extent = ExtentManager.getExtent();
+	public static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
 
-    @Override
-    public void onTestStart(ITestResult result) {
+	@Override
+	public void onTestStart(ITestResult result) {
 
-        ExtentTest extentTest = extent.createTest(
-                result.getTestClass().getName() + " :: " + result.getMethod().getMethodName()
-        );
+		ExtentTest extentTest = extent
+				.createTest(result.getTestClass().getName() + " :: " + result.getMethod().getMethodName());
 
-        test.set(extentTest);
-    }
+		test.set(extentTest);
+	}
 
-    @Override
-    public void onTestSuccess(ITestResult result) {
+	@Override
+	public void onTestSuccess(ITestResult result) {
 
-        test.get().pass("Test Passed");
+		test.get().pass("Test Passed");
 
-        // ✅ Screenshot on PASS
-        try {
-            String path = ExtentManager.captureScreenshot();
-            test.get().addScreenCaptureFromPath(path);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+		// ✅ Screenshot on PASS
+		try {
+			String path = ExtentManager.captureScreenshot();
+			test.get().addScreenCaptureFromPath(path);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 
-        Markup m = MarkupHelper.createLabel(
-                "TEST CASE PASSED",
-                ExtentColor.GREEN
-        );
+		Markup m = MarkupHelper.createLabel("TEST CASE PASSED", ExtentColor.GREEN);
 
-        test.get().pass(m);
-    }
+		test.get().pass(m);
+	}
 
-    @Override
-    public void onTestFailure(ITestResult result) {
+	@Override
+	public void onTestFailure(ITestResult result) {
 
-        test.get().fail(result.getThrowable());
+		test.get().fail(result.getThrowable());
 
-        try {
-            String path = ExtentManager.captureScreenshot();
+		try {
+			String path = ExtentManager.captureScreenshot();
 
-            test.get().fail("Screenshot",
-                    MediaEntityBuilder.createScreenCaptureFromPath(path).build());
+			test.get().fail("Screenshot", MediaEntityBuilder.createScreenCaptureFromPath(path).build());
 
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 
-        Markup m = MarkupHelper.createLabel(
-                "TEST CASE FAILED",
-                ExtentColor.RED
-        );
+		Markup m = MarkupHelper.createLabel("TEST CASE FAILED", ExtentColor.RED);
 
-        test.get().log(Status.FAIL, m);
-    }
+		test.get().log(Status.FAIL, m);
+	}
 
-    @Override
-    public void onTestSkipped(ITestResult result) {
+	@Override
+	public void onTestSkipped(ITestResult result) {
 
-        Markup m = MarkupHelper.createLabel(
-                "TEST CASE SKIPPED",
-                ExtentColor.YELLOW
-        );
+		Markup m = MarkupHelper.createLabel("TEST CASE SKIPPED", ExtentColor.YELLOW);
 
-        test.get().skip(m);
-    }
+		test.get().skip(m);
+	}
 
-    @Override
-    public void onFinish(ITestContext context) {
+	@Override
+	public void onFinish(ITestContext context) {
 
-        if (extent != null) {
-            extent.flush();   // ✅ report generate
-        }
-    }
+		if (extent != null) {
+			extent.flush();
+		}
+
+		//  Email send
+		EmailUtil.sendEmail();
+
+	}
 }

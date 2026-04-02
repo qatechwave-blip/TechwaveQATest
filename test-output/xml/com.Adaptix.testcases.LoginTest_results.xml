@@ -4,11 +4,11 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="4.034">
+           time="3.133">
   <properties />
   
   
-            <testcase name="loginPage" time="1.657" classname="com.Adaptix.testcases.LoginTest" />
-                <testcase name="moduleTest" time="2.377" classname="com.Adaptix.testcases.LoginTest" />
+            <testcase name="loginPage" time="1.313" classname="com.Adaptix.testcases.LoginTest" />
+                <testcase name="moduleTest" time="1.820" classname="com.Adaptix.testcases.LoginTest" />
       
 </testsuite>
